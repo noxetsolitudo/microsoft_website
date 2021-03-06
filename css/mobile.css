@@ -1,0 +1,280 @@
+/* Navigation */
+#navbar .container .navbar-container{
+  display: flex;   
+  flex-direction: column;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+#navbar .container .navbar-container h1{
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+#navbar .container .navbar-container .logo-container img{
+  display: none;
+} 
+
+#navbar .container .navbar-container ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;    
+}
+
+#navbar .container .navbar-container ul li:last-child{
+  grid-column-start: 1;
+  grid-column-end: 5;    
+}
+
+#navbar .container .navbar-container ul li a{
+  display: block;
+  font-size: 0.75rem;
+  padding: 0.1rem;
+  margin: 0.125rem;
+}
+
+/* Showcase */
+#showcase:before{ 
+  top: 90px; 
+}
+
+#showcase .container h2{
+  font-size: 2.5rem;
+  margin-top: -7rem;
+}
+
+#showcase .container p{
+  font-size: 1rem;
+}
+
+/* What I Do */
+#what .container h2{
+  font-size: 1.25rem;
+  margin: 0.5rem;
+}
+
+#what .container .what-container .items{
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start;
+  align-content: center;
+  text-align: center;  
+  justify-content: baseline;
+}
+
+#what .container .what-container .item{
+  margin: 0.5rem;
+}
+
+#what .container .what-container .items i{
+  font-size: 2rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#what .container .what-container .items h3{
+  font-size: 1.15rem;
+}
+
+#what .container .what-container .items p{
+  font-size: 1rem;
+}
+
+/* Who */
+#who .container h2{
+  font-size: 1.25rem;
+  margin: 0.5rem;
+}
+
+#who .container .who-info-left{
+  display: none;
+}
+
+#who .container .who-info-container{
+  display: block;
+  margin-top: 0;
+  text-align: center;
+}
+
+#who .container .who-info-container .who-info-right p{ 
+  font-size: 1rem;    
+}
+
+/* Clients */
+#clients .container h2{
+  font-size: 1.25rem;
+  margin: 0.5rem;
+}
+
+#clients .container .grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.15rem;
+}
+
+#clients .container .grid-container .item-container img{
+  width: 50px;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+#clients .container .grid-container div:last-child{
+  display: none;
+}
+
+#clients .container .grid-container .item-container h3{
+  font-size: 0.75rem;
+}
+
+/* Contact */
+#contact .container .contact-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+#contact .container h2{
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+#contact .container .contact-container .item i{
+  font-size: 2rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#contact .container .contact-container .item p{
+  font-size: 1rem;
+  margin-bottom: 1rem;    
+}
+
+/* Footer */
+#main-footer .container p{
+  font-size: 1-rem;
+}
+
+@media(min-width:360px) and (max-width:410px){
+
+  /* Navigation */
+  #navbar .container .navbar-container h1{
+    font-size: 1.5rem;
+  }
+
+  #navbar .container .navbar-container ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+  }
+
+  #navbar .container .navbar-container ul li:last-child{
+    grid-column-start: 1;
+    grid-column-end: 5;    
+  }
+
+  #navbar .container .navbar-container ul li a{
+    display: block;
+    font-size: 0.85rem;
+  }
+}
+
+@media(min-width:411px) and (max-width:512px){
+
+   /* Navigation */
+  #navbar .container .navbar-container h1{
+    font-size: 1.5rem;
+  }
+
+  #navbar .container .navbar-container ul{
+    gap: 0 1rem;   
+  }
+
+  #navbar .container .navbar-container ul li a{  
+    font-size: 0.81rem;
+  }
+}
+
+@media(min-width:513px) and (max-width:767px){
+
+  /* Navigation */
+  #navbar .container .navbar-container h1{
+    font-size: 1.5rem;
+  }
+
+  #navbar .container .navbar-container ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;    
+  }
+
+  #navbar .container .navbar-container ul li:last-child{
+    grid-column-start: 5;
+    grid-column-end: 5;    
+  }
+
+  #navbar .container .navbar-container ul li a{
+    display: block;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.25rem;
+    margin: 0.5rem;
+  }
+
+  /* Contact */
+  #contact .container .contact-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  }
+}
+
+@media(width:768px){
+
+  /* Navigation */
+  #navbar .container .navbar-container{    
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #navbar .container .navbar-container h1{
+    font-size: 1.5rem;
+  }
+
+  #navbar .container .navbar-container ul{
+    display: flex;   
+  }
+
+  #navbar .container .navbar-container ul li a{
+    display: block;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.25rem;
+    margin: 0.5rem;
+  }
+
+  /* Showcase */
+  #showcase:before{ 
+    top: 50px; 
+  }
+
+  /* What I do */
+  #what .container .what-container .items{
+    display: flex;
+    flex-direction: row;  
+    align-items: flex-start;
+    align-content: center;
+    text-align: center;  
+    justify-content: baseline;
+  }
+
+  /* Contact */
+  #contact .container .contact-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+@media(height:320px){
+  /* Showcase */
+
+  #showcase .container h2{
+    font-size: 2rem;
+    margin-top: -7rem;
+  }
+}
